@@ -41,10 +41,8 @@ echo "Setting permissions (requires root access) ..."
 sys=`uname -s`
 if [ $sys = Darvin ]
 then
-  sudo chmod +a "www allow delete,write,append,file_inherit,directory_inherit" drupal/sites/default/files
-  sudo chmod +a "`whoami` allow delete,write,append,file_inherit,directory_inherit" drupal/sites/default/files
+  sudo chown -R _www drupal/sites/default/files
 else
-  sudo setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX drupal/sites/default/files
-  sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx drupal/sites/default/files
+  sudo chown -R www-data drupal/sites/default/files
 fi
 echo "Done."
