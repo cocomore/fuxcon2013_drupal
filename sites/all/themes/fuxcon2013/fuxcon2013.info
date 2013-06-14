@@ -1,0 +1,7 @@
+name = FUxCon2013
+description = A theme based on Twitter Bootstrap for FUxCon2013.
+package = FUxCon2013
+core = 7.x
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = styles.css
+scripts[] = bootstrap/js/bootstrap.min.js

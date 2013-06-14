@@ -1,0 +1,60 @@
+/**
+ */
+body {
+  padding-bottom: 40px;
+  background-color: #DDD;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 700px;
+  background-color: white;
+}
+
+.page-projects .container-narrow {
+  background-color: transparent;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.masthead .nav {
+  margin-bottom: 0px;
+}
+
+.masthead h3 {
+  margin-top: 0;
+}
+
+.projects .project {
+  background: white;
+  border: solid 1px #DDD;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.projects .project h4 {
+  font-size: 16px;
+}
+
+.node-type-project .thumbnail {
+  margin-bottom: 10px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.projects-edit .project-about {
+  height: 20em;
+}
+
+/*
+ * Drupalisms:
+ */
+.field-name-field-dates {
+  margin-bottom: 10px;
+}
