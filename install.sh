@@ -38,6 +38,7 @@ echo "Loading database ..."
 gunzip < fuxcon2013_drupal.sql.gz | mysql -ufuxcon -pfuxcon fuxcon2013_drupal
 
 echo "Setting permissions (requires root access) ..."
+mkdir -p drupal/sites/default/files
 sys=`uname -s`
 if [ $sys = Darvin ]
 then
